@@ -105,11 +105,11 @@ themeButton.addEventListener('click', (event) => {
     if(themeSwitch.getAttribute('href') === 'dark.css') {
         console.log("Button if is clicked.");
         themeSwitch.setAttribute('href', 'light.css');
-        themeButton.setAttribute('src', 'images/moon.png');
+        themeButton.setAttribute('src', 'moon.png');
     } else {
         console.log("Button else is clicked.");
         themeSwitch.setAttribute('href', 'dark.css');
-        themeButton.setAttribute('src', 'images/sun.png');
+        themeButton.setAttribute('src', 'sun.png');
     }
 });
 
