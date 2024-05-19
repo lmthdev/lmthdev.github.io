@@ -1,6 +1,6 @@
 .title, .confirmation {
   text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.25;
     letter-spacing: -.1rem;
   font-weight: 500;
@@ -93,3 +93,28 @@ button {
 input[type="checkbox"] {
   cursor: pointer !important;
 }
+
+
+body {
+  text-align: center;
+}
+
+header,
+main,
+footer {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center; /* Reset text alignment for child elements */
+}
+
+.embed {
+  margin: 100px auto;
+  width: 90%;
+  text-align: left; /* Reset text alignment for child elements */
+}
+
+.title {
+  text-align: center;
+}
+
+/* Add any other styling as needed */
