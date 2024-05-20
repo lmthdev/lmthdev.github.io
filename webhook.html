@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Discord webhook aracılığıyla mesaj gönderin.">
+  <meta name="theme-color" content="#7289da">
+  <title>Discord Webhook Gönderici</title>
+  <link rel="stylesheet" class="themeSwitch" href="dark.css">
+  <link rel="stylesheet" href="skeleton.min.css">
+  <link rel="stylesheet" href="default.min.css">
+  <link rel="stylesheet" href="ez.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    footer p {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <br>
+    <br>
+    <h2 class="title">Discord Webhook Mesaj Gönderici</h2>
+  </header>
+  <main>
+    <form class="hook-form">
+      <input class="u-full-width" type="text" id="username" name="username" placeholder="Kullanıcı Adınız"><br>
+      <input class="u-full-width" type="url" id="avatar" name="avatar" placeholder="Avatar URL'niz"><br>
+      <textarea class="u-full-width" type="text" id="content" required name="content" placeholder="Mesajınız"></textarea><br>
+      <input class="u-full-width" type="url" id="webhook_url" name="webhook_url" placeholder="Webhook URL'niz"><br>
+      <div class="embed" hidden><hr>
+        <h4 class="title">Embed</h4>
+        <input class="u-full-width" type="text" id="embed-title" name="title" placeholder="Başlık"><br>
+        <input class="u-full-width" type="url" id="embed-title-url" name="url" placeholder="Başlık URL'si"><br>
+        <textarea class="u-full-width" type="text" id="embed-description" name="description" placeholder="Açıklama"></textarea>
+        <input class="u-full-width" type="color" id="embed-color" name="color"><br>
+        <input class="u-full-width" type="text" id="embed-author" name="author" placeholder="Yazar"><br>
+        <input class="u-full-width" type="url" id="embed-author-url" name="author_url" placeholder="Yazar URL'si"><br>
+        <input class="u-full-width" type="url" id="embed-author-icon" name="author_icon" placeholder="Yazar Icon URL'si"><br>
+        <input class="u-full-width" type="text" id="embed-footer" name="footer" placeholder="Altbilgi"><br>
+        <input class="u-full-width" type="url" id="embed-footer-icon" name="footer_icon" placeholder="Altbilgi Icon URL'si"><br>
+        <input class="u-full-width" type="url" id="embed-image-url" name="image_url" placeholder="Görsel URL'si"><br>
+        <input class="u-full-width" type="url" id="embed-thumbnail-url" name="thumbnail_url" placeholder="Küçük Resim URL'si"><br>
+        <span class="embed-value-title">Field ekleme özellği yakında eklenecektir, güncellemeler için beklemede kalın!</span>
+        <hr>
+      </div><hr>
+      <button type="submit" class="button-primary">Gönder!</button>
+    </form>
+    <p class="confirmation"></p>
+    <pre><code class="json"></code></pre>
+  </main>
+  <footer>
+    <p>İletişime geçmek için : <a href="https://www.instagram.com/ayazdoruck/" target="_blank">Tıklayın</a></p>   
+  </footer>
+  <script src="script.js"></script>
+  <script src="highlight.min.js"></script>
+</body>
+</html>
