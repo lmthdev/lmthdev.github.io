@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* İçeriği aşağıya al */
   height: 100vh;
+}
+
+.header {
+  margin-bottom: 20px; /* Başlık ile input arasına boşluk bırak */
 }
 
 input[type="text"] {
