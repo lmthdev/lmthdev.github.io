@@ -18,7 +18,7 @@ function sendMessage() {
 
   errorMessage.textContent = "";
 
-  var webhookURL = "https://discord.com/api/webhooks/1242158421046988800/HPvlX-6xCoEiBQEf1ExnGmo3IoIOR4wqLfVK4GJSIXdTKnloMXEiTwFtjFpB5LjahvEI";
+  var webhookURL = "https://discord.com/api/webhooks/1242165094792826981/ErrFOk1BNiaIFwYVgPJmjt5VEPpSwCyI2CEqEiLo8rUrQA9I6PU8f_pty9PPWy7fp741";
 
   fetch(webhookURL, {
     method: "POST",
