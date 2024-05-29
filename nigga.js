@@ -6,7 +6,7 @@ function sendMessage() {
 
   if (name === "" || message === "") {
     errorMessage.textContent = "Adınızı ve mesajınızı girin!";
-    button.style.backgroundColor = "#dc3545"; // Başarısız durumda kırmızı
+    button.style.backgroundColor = "#ff0000"; // Başarısız durumda kırmızı
     setTimeout(function() {
       button.style.backgroundColor = "#ffffff"; // 1 saniye sonra mavi hale geri dön
     }, 3000);
@@ -33,7 +33,7 @@ function sendMessage() {
     }
     button.style.backgroundColor = "#28a745"; // Başarı durumunda yeşil
     setTimeout(function() {
-      button.style.backgroundColor = "#007bff"; // 1 saniye sonra mavi hale geri dön
+      button.style.backgroundColor = "#ffffff"; // 1 saniye sonra mavi hale geri dön
     }, 1000);
     document.getElementById("nameInput").value = ""; // İsim inputunu temizle
     document.getElementById("messageInput").value = ""; // Mesaj inputunu temizle
