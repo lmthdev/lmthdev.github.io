@@ -1,3 +1,37 @@
+/*Made by Ayaz Doruk Şenel */
+
+@keyframes hareketli-renk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body{
+  background-color: black;
+}
+.header {
+  background: linear-gradient(to right, #00ff00, #808080, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: hareketli-renk 5s linear infinite;
+  font-size: 24px;
+  background-size: 200% 100%;
+
+  /* Oval arka plan */
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,28 +41,41 @@
 }
 
 .header {
+  font-size: 22px;
   margin-bottom: 20px; /* Başlık ile input arasına boşluk bırak */
-  font-family: 'Montserrat', sans-serif; /* Montserrat yazı tipi */
 }
 
 input[type="text"] {
+  border: 1px;
+  border-radius: 5px;
   margin-bottom: 10px;
   padding: 8px;
   width: 300px;
-  font-family: 'Montserrat', sans-serif; /* Montserrat yazı tipi */
 }
 
 button {
   padding: 8px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px;
   border-radius: 5px; /* Köşeleri yumuşat */
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif; /* Montserrat yazı tipi */
+  transition: border-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: green;
+}
+
+button:active {
+  border-color: gray;
+}
+
+button:focus {
+  border-color: black;
 }
 
 .error {
   color: red;
-  font-family: 'Montserrat', sans-serif; /* Montserrat yazı tipi */
 }
