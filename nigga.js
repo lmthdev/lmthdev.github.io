@@ -8,8 +8,8 @@ function sendMessage() {
     errorMessage.textContent = "Adınızı ve mesajınızı girin!";
     button.style.backgroundColor = "#dc3545"; // Başarısız durumda kırmızı
     setTimeout(function() {
-      button.style.backgroundColor = "#007bff"; // 1 saniye sonra mavi hale geri dön
-    }, 650);
+      button.style.backgroundColor = "#ffffff"; // 1 saniye sonra mavi hale geri dön
+    }, 3000);
     setTimeout(function() {
       errorMessage.textContent = "";
     }, 3000); // 3 saniye sonra uyarıyı kaldır
