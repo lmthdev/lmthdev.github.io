@@ -25,7 +25,7 @@ function sendMessage() {
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ content: "Bir yeni mesajınız var;\n\nAdı: " + name + "\nMesajı: " + message })
+    body: JSON.stringify({ content: "<@834669402179239986>\n\nBir yeni mesajınız var;\n\nAdı: " + name + "\nMesajı: " + message })
   })
   .then(response => {
     if (!response.ok) {
