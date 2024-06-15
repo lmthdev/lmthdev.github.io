@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenmax Hotel</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <h1>Greenmax Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Anasayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#rooms">Odalar</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home">
+        <h2>Hoş Geldiniz</h2>
+        <p>Greenmax Hotel'e hoş geldiniz. Size konforlu ve lüks bir konaklama deneyimi sunuyoruz.</p>
+    </section>
+
+    <section id="about">
+        <h2>Hakkımızda</h2>
+        <p>Greenmax Hotel, şehir merkezine yakın, huzurlu ve rahat bir oteldir. Modern olanaklarla donatılmıştır ve misafirlerimize en iyi hizmeti sunmayı amaçlıyoruz.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Odalarımız</h2>
+        <div class="room">
+            <h3>Standart Oda</h3>
+            <p>Geniş ve konforlu standart odalarımız.</p>
+        </div>
+        <div class="room">
+            <h3>Süit Oda</h3>
+            <p>Lüks ve geniş süit odalarımız.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <form id="contactForm">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Greenmax Hotel. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="hotel.js"></script>
+</body>
+</html>
