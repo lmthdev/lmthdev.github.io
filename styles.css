@@ -1,0 +1,112 @@
+.title, .confirmation {
+  text-align: center;
+	font-size: 40px;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+input[type=color] {
+  background: none;
+  border: none;
+  height: 33px;
+  margin-top: -10px;
+}
+
+.embed-value-title {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .hook-form, .confirmation, .json {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hook-form, .confirmation, .json {
+    margin: auto;
+  }
+}
+
+.json {overflow: auto;}
+textarea {resize: vertical;}
+.reset {width: auto;}
+.hljs {background: #F2F3F5;}
+.hljs-attr {color: #B58900;}
+.hljs-literal, .hljs-string, .hljs-number {color: #2AA198;}
+.hook-form, .embed {text-align: center;}
+.embed {margin: auto;}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 21px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background-color: #72767d;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7289DA;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7289DA;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.themeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 55px;
+}
+
+button {
+  position: static;
+}
+
+input[type="checkbox"] {
+  cursor: pointer !important;
+}

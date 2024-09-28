@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/630755881251766292/733702131252461678/iu.png">
+  <meta name="description" content="Send messages via Discord webhooks">
+  <meta name="theme-color" content="#7289da">
+  <title>Discord Webhook Sender</title>
+  <link rel="stylesheet" class="themeSwitch" href="dark.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://ez-css.now.sh">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h2 class="title">Discord Webhook Sender</h2>
+  </header>
+  <main>
+    <form class="hook-form">
+      <input class="u-full-width" type="text" id="username" name="username" placeholder="Username"><br>
+      <input class="u-full-width" type="url" id="avatar" name="avatar" placeholder="Avatar URL"><br>
+      <textarea class="u-full-width" type="text" id="content" required name="content" placeholder="Message"></textarea><br>
+      <input class="u-full-width" type="url" id="webhook_url" name="webhook_url" placeholder="Webhook URL"><br>
+      <div class="embed" hidden>
+        <h4 class="title">Embed</h4>
+        <input class="u-full-width" type="text" id="embed-title" name="title" placeholder="Title"><br>
+        <input class="u-full-width" type="url" id="embed-title-url" name="url" placeholder="Title URL"><br>
+        <textarea class="u-full-width" type="text" id="embed-description" name="description" placeholder="Description"></textarea>
+        <input class="u-full-width" type="color" id="embed-color" name="color"><br>
+        <input class="u-full-width" type="text" id="embed-author" name="author" placeholder="Author"><br>
+        <input class="u-full-width" type="url" id="embed-author-url" name="author_url" placeholder="Author URL"><br>
+        <input class="u-full-width" type="url" id="embed-author-icon" name="author_icon" placeholder="Author Icon URL"><br>
+        <input class="u-full-width" type="text" id="embed-footer" name="footer" placeholder="Footer"><br>
+        <input class="u-full-width" type="url" id="embed-footer-icon" name="footer_icon" placeholder="Footer Icon URL"><br>
+        <input class="u-full-width" type="url" id="embed-image-url" name="image_url" placeholder="Image URL"><br>
+        <input class="u-full-width" type="url" id="embed-thumbnail-url" name="thumbnail_url" placeholder="Thumbnail URL"><br>
+        <span class="embed-value-title">The ability to add fields is coming soon</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="resetForm" name="resetForm" class="reset" checked><span class="slider round"></span></input>
+      </label>
+      <span>Clear all fields when sending</span><br>
+      <label class="switch">
+        <input type="checkbox" id="addEmbed" name="addEmbed" class="addEmbed"><span class="slider round"></span></input>
+      </label>
+      <span>Add embed</span><br>
+      <button type="submit" class="button-primary">Send</button>
+    </form>
+    <img src="images/sun.png" class="themeButton">
+    <p class="confirmation"></p>
+    <pre><code class="json"></code></pre>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+</body>
+</html>
